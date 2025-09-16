@@ -1,0 +1,46 @@
+
+
+
+
+
+library-management-system/
+│
+├── index.html
+├── style.css
+└── script.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 City Central Library</h1>
+        <nav>
+            <ul>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#loans">Loans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Books Section -->
+        <section id="books">
+            <h2>Book Collection</h2>
+            <div class="filters">
+                <input type="text" id="searchBooks" placeholder="Search books..." oninput="searchBooks()">
+                <select id="genreFilter" onchange="filterByGenre()">
+                    <option value="">All Genres</option>
+                </select>
+            </div>
+            <div id="booksList" class="grid-container"></div>
+        </section>
+
+        <!-- Members Section -->
+        <section id="members">
+            <
